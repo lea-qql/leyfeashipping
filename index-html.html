@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy World - Produits Sucrés du Monde</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div id="app" class="container mx-auto px-4">
+        <!-- En-tête -->
+        <header class="py-6 flex justify-between items-center">
+            <div class="logo">
+                <h1 class="text-3xl font-bold text-blue-600">Candy World</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">Accueil</a></li>
+                    <li><a href="#catalogue" class="text-gray-800 hover:text-blue-600">Catalogue</a></li>
+                    <li><a href="#pays" class="text-gray-800 hover:text-blue-600">Pays</a></li>
+                    <li><a href="#panier" class="text-gray-800 hover:text-blue-600">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section Héroïque -->
+        <section class="my-12 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+                Découvrez les Saveurs du Monde
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Bonbons, gâteaux et boissons des quatre coins de la planète
+            </p>
+            <a href="#catalogue" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+                Explorer le Catalogue
+            </a>
+        </section>
+
+        <!-- Sections Dynamiques -->
+        <section id="catalogue" class="mb-12">
+            <h3 class="text-2xl font-bold mb-6">Nos Catégories</h3>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-4">Bonbons</h4>
+                    <p>Découvrez les confiseries uniques de chaque pays</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-4">Gâteaux</h4>
+                    <p>Des pâtisseries traditionnelles du monde entier</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-4">Boissons</h4>
+                    <p>Des breuvages sucrés aux saveurs internationales</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carte Interactive des Pays -->
+        <section id="pays" class="mb-12">
+            <h3 class="text-2xl font-bold mb-6">Nos Destinations Sucrées</h3>
+            <div class="bg-gray-200 h-96 flex items-center justify-center rounded-lg">
+                <!-- Futur emplacement pour carte interactive -->
+                <p class="text-gray-600">Carte des pays à venir</p>
+            </div>
+        </section>
+
+        <!-- Pied de Page -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto flex justify-between">
+                <div>
+                    <h4 class="font-bold mb-4">Candy World</h4>
+                    <p>© 2024 Tous droits réservés</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacts</h4>
+                    <p>Email: contact@candyworld.fr</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Vue.js pour interactions dynamiques
+        new Vue({
+            el: '#app',
+            data: {
+                categories: ['Bonbons', 'Gâteaux', 'Boissons']
+            },
+            methods: {
+                // Méthodes interactives à ajouter
+            }
+        });
+    </script>
+</body>
+</html>
