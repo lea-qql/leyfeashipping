@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Amazon",
+        "base_url": "https://www.amazon.fr/s?k=bonbons",
+        "product_selector": ".s-result-item",
+        "name_selector": ".a-size-medium",
+        "price_selector": ".a-price-whole"
+    },
+    {
+        "name": "Cdiscount",
+        "base_url": "https://www.cdiscount.com/recherche/bonbons",
+        "product_selector": ".prdtBloc",
+        "name_selector": ".name",
+        "price_selector": ".price"
+    },
+    {
+        "name": "Fnac",
+        "base_url": "https://www.fnac.com/recherche/bonbons",
+        "product_selector": ".Article-itemInner",
+        "name_selector": ".Article-title",
+        "price_selector": ".Price"
+    }
+]
